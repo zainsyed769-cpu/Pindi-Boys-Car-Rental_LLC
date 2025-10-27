@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-midnight: #0b1f33;
+  --brand-gold: #c89b3c;
+  --brand-sand: #f6e8d1;
+  --brand-cloud: #f9fafb;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--brand-cloud);
+  color: var(--brand-midnight);
+}
+
+a {
+  color: inherit;
+}
+
+.section-heading {
+  @apply font-display text-3xl font-semibold tracking-tight text-brand-midnight md:text-4xl;
+}
+
+.section-subtitle {
+  @apply mt-3 max-w-2xl text-base text-brand-midnight/70 md:text-lg;
+}
