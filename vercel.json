@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "node lease-to-own/scripts/build-web.js",
+  "outputDirectory": "lease-to-own/web",
+  "framework": null,
+  "cleanUrls": true,
+  "trailingSlash": false
+}

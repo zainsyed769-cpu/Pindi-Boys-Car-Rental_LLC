@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prime Hire Car Rental — Lease to Own | Dubai</title>
+  <meta name="description" content="Lease to own a car in Dubai with Prime Hire Car Rental. Fixed monthly payments, insurance & service included, own the car at the end of the term." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="brand-mark">PH</span>
+        <span class="brand-name">Prime Hire <small>Car Rental</small></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#fleet">Fleet</a>
+        <a href="#calculator">Calculator</a>
+        <a class="btn btn-sm" href="#apply">Apply now</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="top" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Dubai • RTA registered fleet</span>
+        <h1>Drive today.<br />Own it tomorrow.</h1>
+        <p class="lead">
+          Pick a car, choose your term, pay a fixed amount every month — with
+          insurance, service and registration included. At the end of the term
+          the car is <strong>yours</strong>. No bank, no hassle.
+        </p>
+        <div class="hero-cta">
+          <a class="btn" href="#calculator">Calculate my payment</a>
+          <a class="btn btn-ghost" href="#fleet">Browse the fleet</a>
+        </div>
+        <ul class="hero-points">
+          <li>✓ Insurance &amp; service included</li>
+          <li>✓ 12 / 24 / 36 / 48 month terms</li>
+          <li>✓ Lease-to-Own or Flexi buyout</li>
+        </ul>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-inner" id="heroQuote">
+          <div class="hc-row"><span>Car</span><strong id="hcCar">—</strong></div>
+          <div class="hc-row"><span>Term</span><strong id="hcTerm">—</strong></div>
+          <div class="hc-monthly">
+            <span>From</span>
+            <div class="hc-amount"><b id="hcMonthly">—</b><i>AED / month</i></div>
+          </div>
+          <a class="btn btn-block" href="#calculator">Adjust &amp; apply</a>
+          <p class="hc-note">Indicative. Insurance &amp; service included. 5% VAT applies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="section">
+    <div class="container">
+      <h2 class="section-title">How lease-to-own works</h2>
+      <div class="steps">
+        <div class="step"><span class="step-n">1</span><h3>Choose a car</h3><p>Pick from our Dubai fleet — economy to premium SUVs.</p></div>
+        <div class="step"><span class="step-n">2</span><h3>Pick a plan</h3><p>Lease-to-Own to fully own, or Flexi Lease for a lower monthly with a buyout option.</p></div>
+        <div class="step"><span class="step-n">3</span><h3>Drive &amp; pay monthly</h3><p>One fixed payment covers finance, insurance, service &amp; registration.</p></div>
+        <div class="step"><span class="step-n">4</span><h3>Own it</h3><p>At term end the car is transferred to your name (or pay the buyout on Flexi).</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="calculator" class="section section-alt">
+    <div class="container calc-grid">
+      <div class="calc-controls">
+        <h2 class="section-title">Payment calculator</h2>
+
+        <label class="field">
+          <span>Car</span>
+          <select id="carSelect"></select>
+        </label>
+
+        <div class="field">
+          <span>Plan</span>
+          <div class="seg" id="productSeg">
+            <button data-product="lease-to-own" class="active">Lease-to-Own</button>
+            <button data-product="flexi">Flexi Lease</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <span>Term</span>
+          <div class="seg" id="termSeg">
+            <button data-term="12">12 mo</button>
+            <button data-term="24">24 mo</button>
+            <button data-term="36" class="active">36 mo</button>
+            <button data-term="48">48 mo</button>
+          </div>
+        </div>
+
+        <label class="field">
+          <span>Down payment: <b id="downLabel">10%</b></span>
+          <input type="range" id="downRange" min="0" max="40" step="5" value="10" />
+        </label>
+      </div>
+
+      <div class="calc-result" id="calcResult">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <section id="fleet" class="section">
+    <div class="container">
+      <h2 class="section-title">Our fleet</h2>
+      <div class="filter-bar" id="filterBar"></div>
+      <div class="fleet-grid" id="fleetGrid"></div>
+    </div>
+  </section>
+
+  <section id="apply" class="section section-alt">
+    <div class="container apply-grid">
+      <div>
+        <h2 class="section-title">Apply now</h2>
+        <p class="lead">Send us your details and the car you want. Our team will confirm eligibility and finalise your plan.</p>
+        <ul class="apply-list">
+          <li>Emirates ID + valid UAE driving licence</li>
+          <li>Salary certificate or business trade licence</li>
+          <li>3–6 months bank statement</li>
+          <li>Security deposit (refundable) &amp; first month payment</li>
+        </ul>
+      </div>
+      <form class="apply-form" id="applyForm">
+        <label>Full name<input type="text" name="name" required /></label>
+        <label>Mobile (UAE)<input type="tel" name="phone" required placeholder="+971 5X XXX XXXX" /></label>
+        <label>Car of interest<input type="text" name="car" id="applyCar" readonly /></label>
+        <label>Plan<input type="text" name="plan" id="applyPlan" readonly /></label>
+        <label>Estimated monthly<input type="text" name="monthly" id="applyMonthly" readonly /></label>
+        <button class="btn btn-block" type="submit">Submit application</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <span class="brand-name">Prime Hire <small>Car Rental</small></span>
+        <p>Dubai, United Arab Emirates · RTA registered fleet</p>
+      </div>
+      <p class="disclaimer">
+        All figures are indicative and for illustration only. Final pricing is
+        subject to credit approval, vehicle availability and signed agreement.
+        Prices include 5% VAT on the lease service. © <span id="year"></span> Prime Hire Car Rental.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/cars.js"></script>
+  <script src="js/pricing.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
