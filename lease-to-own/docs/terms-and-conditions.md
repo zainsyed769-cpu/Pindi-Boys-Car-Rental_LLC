@@ -1,6 +1,6 @@
 # Terms & Conditions — Lease-to-Own Program
 
-**Prime Hire Car Rental**, Dubai, UAE · Fleet operated under Pindi Boys Car Rental L.L.C
+**Prime Hire Car Rental**, Dubai, UAE
 
 > Customer-facing summary. Read together with the signed Lease-to-Own Agreement,
 > which prevails in case of conflict. All figures shown in calculators/quotes

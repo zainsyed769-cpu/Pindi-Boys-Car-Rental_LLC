@@ -3,16 +3,16 @@
 **Prime Hire Car Rental** — Dubai, United Arab Emirates
 
 > ⚠️ **Template only — not legal advice.** This draft must be reviewed and
-> adapted by a UAE-licensed legal advisor before use. Fleet vehicles are owned
-> by **Pindi Boys Car Rental L.L.C** and are financed/mortgaged to UAE banks;
-> any title transfer is subject to clearance of the relevant bank mortgage.
+> adapted by a UAE-licensed legal advisor before use. Where a fleet vehicle is
+> financed/mortgaged to a UAE bank, any title transfer is subject to clearance
+> of the relevant bank mortgage.
 
 ---
 
 This Lease-to-Own Agreement ("Agreement") is made on **____ / ____ / 20__** between:
 
-- **Lessor:** Prime Hire Car Rental (Trade Licence No. ______________), Dubai, UAE;
-  vehicle owned/operated under Pindi Boys Car Rental L.L.C ("the Company"); and
+- **Lessor:** Prime Hire Car Rental (Trade Licence No. ______________), Dubai, UAE
+  ("the Company"); and
 - **Lessee / Customer:** ____________________________, Emirates ID ______________,
   UAE Driving Licence ______________, Mobile ______________.
 

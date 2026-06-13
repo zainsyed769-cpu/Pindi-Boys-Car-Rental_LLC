@@ -1,12 +1,11 @@
 # Prime Hire Car Rental — Lease-to-Own Program
 
-A Diamond-Lease-style **lease-to-own** product built on the existing fleet
-(owned/operated under **Pindi Boys Car Rental L.L.C**, Dubai). Customers pay a
-fixed monthly amount — with **insurance, service, registration and VAT
-included** — and either **own the car** at the end (Lease-to-Own) or take a
-lower monthly with a **buyout option** (Flexi Lease).
+A Diamond-Lease-style **lease-to-own** product for **Prime Hire Car Rental**
+(Dubai). Customers pay a fixed monthly amount — with **insurance, service,
+registration and VAT included** — and either **own the car** at the end
+(Lease-to-Own) or take a lower monthly with a **buyout option** (Flexi Lease).
 
-> Brand: **Prime Hire Car Rental** · Fleet & financing source: Pindi Boys Car Rental L.L.C.
+> Brand: **Prime Hire Car Rental**, Dubai, UAE.
 
 ## What's inside
 

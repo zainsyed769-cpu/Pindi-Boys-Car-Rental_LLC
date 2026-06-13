@@ -1,6 +1,6 @@
 # Lease-to-Own Pricing Model — Prime Hire Car Rental
 
-Operated on the Pindi Boys Car Rental L.L.C fleet (Dubai, RTA-registered).
+Prime Hire Car Rental fleet (Dubai, RTA-registered).
 All amounts in **AED**. This document explains *how* monthly payments are
 calculated so pricing stays consistent and always above the internal cost
 floor.

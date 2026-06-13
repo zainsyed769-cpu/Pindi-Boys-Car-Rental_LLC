@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  var cars = window.PINDI_CARS || [];
+  var cars = window.PRIME_CARS || [];
   var LTO = window.LTO;
 
   var state = {

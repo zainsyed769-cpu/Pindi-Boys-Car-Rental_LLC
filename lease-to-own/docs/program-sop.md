@@ -4,19 +4,19 @@
 
 ## 1. Goal
 
-Launch a Diamond-Lease-style **lease-to-own** product on the existing
-(Pindi Boys) fleet: customers pay a fixed monthly amount with insurance and
-service bundled, and either own the car at term end (Lease-to-Own) or take a
-lower monthly with a buyout (Flexi Lease).
+Launch a Diamond-Lease-style **lease-to-own** product for Prime Hire Car Rental:
+customers pay a fixed monthly amount with insurance and service bundled, and
+either own the car at term end (Lease-to-Own) or take a lower monthly with a
+buyout (Flexi Lease).
 
 ## 2. Pre-launch checklist
 
 - [ ] **Trade licence** confirms leasing / lease-to-own is a permitted activity.
       If not, add the activity or partner with a licensed finance entity.
-- [ ] **Bank consent:** every vehicle is mortgaged (Emirates Islamic, Dubai
-      Islamic, Emirates NBD, FAB). Confirm with each bank that lease-to-own and
-      eventual title transfer are permitted while the mortgage is open, and the
-      settlement process to release each car.
+- [ ] **Bank consent:** for any vehicle financed/mortgaged to a UAE bank,
+      confirm with the bank that lease-to-own and eventual title transfer are
+      permitted while the mortgage is open, and the settlement process to
+      release each car.
 - [ ] **Insurance:** confirm the comprehensive policy permits long-term lease
       use and additional named drivers.
 - [ ] **Legal review** of the Agreement + T&C by a UAE legal advisor.

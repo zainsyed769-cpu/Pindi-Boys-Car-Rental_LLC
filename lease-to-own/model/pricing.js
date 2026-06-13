@@ -1,5 +1,5 @@
 /*
- * Pindi Boys Car Rental L.L.C — Lease-to-Own pricing engine.
+ * Prime Hire Car Rental — Lease-to-Own pricing engine.
  *
  * One shared module used by both the website (browser) and the Node script
  * that generates the internal pricing sheet. All amounts in AED.

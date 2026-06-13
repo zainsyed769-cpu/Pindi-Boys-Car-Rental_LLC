@@ -1,15 +1,12 @@
 /*
- * Pindi Boys Car Rental L.L.C — Fleet master data for the Lease-to-Own program.
- *
- * Source: RTA "Report Of Vehicles" (12 Oct 2025) + 2025 bank loan sheet.
+ * Prime Hire Car Rental — Fleet master data for the Lease-to-Own program.
  *
  * `price` is the estimated UAE on-road value (AED) used as the lease-to-own
  * acquisition base. These are working estimates per model/year — update them
  * with the real invoice / current market value before quoting a customer.
  *
- * `bankInstalment` is the monthly bank financing cost for that unit (from the
- * loan sheet) where it could be matched; it is the internal cost floor and is
- * NOT shown to customers.
+ * `bankInstalment` is the monthly bank financing cost for that unit; it is the
+ * internal cost floor and is NOT shown to customers.
  *
  * Categories drive the marketing grouping on the website.
  */
@@ -17,7 +14,7 @@
   if (typeof module === 'object' && module.exports) {
     module.exports = factory();
   } else {
-    root.PINDI_CARS = factory();
+    root.PRIME_CARS = factory();
   }
 })(typeof self !== 'undefined' ? self : this, function () {
   var cars = [
