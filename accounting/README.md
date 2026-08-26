@@ -9,17 +9,17 @@ next one starts.
 | # | Phase | Status |
 |---|---|---|
 | 1 | Audit current setup & business requirements | ✅ Delivered — awaiting answers to §5 of `phase-1-audit.md` |
-| 2 | Chart of accounts | ⏸ Blocked on Q1 (VAT) and Q4 (investors) |
-| 3 | Customers & suppliers | ⏸ |
-| 4 | Vehicles (divisions + fixed assets) | ⏸ Blocked on Q5 (loan sheet) |
+| 2 | Chart of accounts | ✅ Delivered — awaiting your approval (`phase-2-chart-of-accounts.md`) |
+| 3 | Customers & suppliers | ⏭ Next, once Phase 2 is approved |
+| 4 | Vehicles (divisions + fixed assets) | ⏸ Blocked on loan sheet (O2) + investor car list (O4) |
 | 5 | Rental invoicing workflow | ⏸ |
 | 6 | Vehicle expenses | ⏸ |
 | 7 | Salik & traffic fines | ⏸ |
-| 8 | Loans & finance | ⏸ Blocked on Q5 |
-| 9 | UAE VAT | ⏸ Blocked on Q1 |
+| 8 | Loans & finance | ⏸ Blocked on loan sheet (O2) |
+| 9 | UAE VAT | ⏸ Blocked on TRN + tax period (O1) |
 | 10 | P&L and management reports | ⏸ |
 | 11 | Dashboard | ⏸ |
-| 12 | Opening balances & historical import | ⏸ Blocked on Q2 |
+| 12 | Opening balances & historical import | ⏸ Go-live 1 Sep 2026 — see Phase 2 §6 |
 | 13 | Testing | ⏸ |
 | 14 | Staff SOPs | ⏸ |
 
@@ -28,9 +28,14 @@ next one starts.
 ```
 accounting/
 ├── phase-1-audit.md              Phase 1 findings, entity facts, open questions
+├── phase-2-chart-of-accounts.md  Chart of accounts design and rationale
+├── decisions.md                  Decisions taken, and what is still outstanding
 ├── data/
 │   ├── fleet-report-extract.csv  51 vehicles extracted from the RTA fleet report
 │   └── vehicle-master.csv        Fleet register / division list (needs your input)
+├── import/
+│   ├── chart-of-accounts.tsv     86 accounts, for Manager's Batch Create
+│   └── divisions.tsv             51 vehicle divisions, for Manager's Batch Create
 └── scripts/
     └── parse_fleet_report.py     Re-extracts any future RTA fleet report PDF
 ```
