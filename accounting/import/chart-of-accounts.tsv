@@ -1,0 +1,87 @@
+Code	Name	Group	Statement	Notes
+1000	Petty Cash	Cash & Cash Equivalents	BS	Create via Bank & Cash Accounts, not manually
+1010	Emirates Islamic Bank - Current A/C 939001	Cash & Cash Equivalents	BS	IBAN AE700400000332982939001
+1100	Accounts Receivable	Current Assets	BS	Auto-created by Manager
+1110	Billable Expenses	Current Assets	BS	Auto-created by Manager
+1150	Other Receivables	Current Assets	BS	
+1200	Prepaid Insurance	Current Assets	BS	Amortise 1/12 monthly to 5000
+1210	Prepaid Registration & Mulkia	Current Assets	BS	Amortise to 5010
+1220	Prepaid Trade Licence	Current Assets	BS	Amortise to 6110
+1230	Prepaid Rent	Current Assets	BS	Amortise to 6040
+1250	Advances to Suppliers	Current Assets	BS	
+1300	Deposits Paid	Current Assets	BS	RTA, Salik, landlord, utilities
+1500	Rental Vehicles - at Cost	Fixed Assets	BS	Fixed asset control account
+1510	Rental Vehicles - Accumulated Depreciation	Fixed Assets	BS	
+1550	Office Equipment & Computers - at Cost	Fixed Assets	BS	Separate control account
+1560	Office Equipment - Accumulated Depreciation	Fixed Assets	BS	
+2000	Accounts Payable	Current Liabilities	BS	Auto-created by Manager
+2100	Customer Security Deposits	Current Liabilities	BS	Control account of Special Accounts, one per customer
+2200	VAT Payable (FTA)	Current Liabilities	BS	Manager's Tax Payable, renamed
+2300	Accrued Expenses	Current Liabilities	BS	
+2310	Salaries & WPS Payable	Current Liabilities	BS	
+2320	End of Service Gratuity Provision	Non-Current Liabilities	BS	UAE labour law - accrue monthly
+2350	Traffic Fines Payable	Current Liabilities	BS	Incurred, not yet paid to RTA
+2400	Vehicle Finance - Emirates NBD	Non-Current Liabilities	BS	18 vehicles
+2410	Vehicle Finance - Emirates Islamic Bank	Non-Current Liabilities	BS	13 vehicles
+2420	Vehicle Finance - Dubai Islamic Bank	Non-Current Liabilities	BS	8 vehicles
+2430	Vehicle Finance - First Abu Dhabi Bank	Non-Current Liabilities	BS	1 vehicle
+2440	Vehicle Finance - Al Habtoor Motors	Non-Current Liabilities	BS	1 vehicle
+2500	Investor Accounts	Non-Current Liabilities	BS	Control account of Special Accounts, one per investor
+2700	Credit Cards	Current Liabilities	BS	
+3000	Share Capital - Paid Up	Equity	BS	AED 300,000 per trade licence
+3100	Owner's Current Account	Equity	BS	Owner contributions
+3200	Owner's Drawings	Equity	BS	Never post to expenses
+3900	Retained Earnings	Equity	BS	Auto-created by Manager
+4000	Daily Rental Income	Revenue	PL	Division required
+4010	Weekly Rental Income	Revenue	PL	Division required
+4020	Monthly Rental Income	Revenue	PL	Division required
+4030	Long-Term / Lease Rental Income	Revenue	PL	Division required
+4040	Delivery & Collection Charges	Revenue	PL	Division required
+4050	Late Return & Extension Charges	Revenue	PL	Division required
+4060	Excess Mileage Charges	Revenue	PL	Division required
+4070	Salik Recharged to Customers	Revenue	PL	Division required
+4080	Traffic Fines & Admin Fees Recharged	Revenue	PL	Division required; confirm VAT treatment
+4090	Damage Recovery Income	Revenue	PL	Division required
+4100	Other Rental Income	Revenue	PL	Division required
+4200	Investor Commission Income	Revenue	PL	Division required; investor cars only
+5000	Vehicle Insurance	Direct Vehicle Costs	PL	Division required; from prepaid 1200
+5010	Vehicle Registration & Mulkia	Direct Vehicle Costs	PL	Division required; from prepaid 1210
+5020	Vehicle Maintenance & Servicing	Direct Vehicle Costs	PL	Division required
+5030	Vehicle Repairs & Accident Repairs	Direct Vehicle Costs	PL	Division required
+5040	Tyres	Direct Vehicle Costs	PL	Division required
+5050	Batteries	Direct Vehicle Costs	PL	Division required
+5060	Fuel	Direct Vehicle Costs	PL	Division required
+5070	Salik - Company Borne	Direct Vehicle Costs	PL	Division required; not recoverable
+5080	Traffic Fines - Company Borne	Direct Vehicle Costs	PL	Division required; not recoverable; no input VAT
+5090	Parking	Direct Vehicle Costs	PL	Division required
+5100	Vehicle Cleaning & Detailing	Direct Vehicle Costs	PL	Division required
+5110	Recovery & Towing	Direct Vehicle Costs	PL	Division required
+5120	Vehicle Inspection & Testing	Direct Vehicle Costs	PL	Division required
+5130	RTA & Government Fees - Vehicles	Direct Vehicle Costs	PL	Division required
+5140	Vehicle Accessories	Direct Vehicle Costs	PL	Division required
+5900	Investor Profit Share	Investor Share	PL	Division required; investor cars only
+6000	Salaries & Wages	Operating Expenses	PL	No division
+6010	Staff Visa, Medical & Emirates ID	Operating Expenses	PL	No division
+6020	End of Service Gratuity	Operating Expenses	PL	No division; accrues to 2320
+6030	Staff Accommodation	Operating Expenses	PL	No division
+6040	Office Rent	Operating Expenses	PL	No division
+6050	Utilities	Operating Expenses	PL	No division
+6060	Telephone & Internet	Operating Expenses	PL	No division
+6070	Software & Subscriptions	Operating Expenses	PL	No division
+6080	Advertising & Marketing	Operating Expenses	PL	No division
+6090	Commission to Agents & Brokers	Operating Expenses	PL	No division
+6100	Professional & Legal Fees	Operating Expenses	PL	No division
+6110	Trade Licence & Government Fees	Operating Expenses	PL	No division; from prepaid 1220
+6120	Office Supplies & Printing	Operating Expenses	PL	No division
+6130	Travel & Entertainment	Operating Expenses	PL	No division
+6140	Bank Charges	Operating Expenses	PL	No division
+6150	Miscellaneous Expenses	Operating Expenses	PL	No division
+7000	Depreciation - Rental Vehicles	Depreciation	PL	Division required
+7010	Depreciation - Office Equipment	Depreciation	PL	No division
+8000	Vehicle Finance Interest / Profit	Finance Costs	PL	Division required; interest portion of EMI only
+8010	Loan Processing & Early Settlement Fees	Finance Costs	PL	Division required
+8020	Merchant & Card Processing Fees	Finance Costs	PL	No division
+9000	Gain on Disposal of Vehicles	Other Income & Expenses	PL	Division required
+9010	Loss on Disposal of Vehicles	Other Income & Expenses	PL	Division required
+9100	Insurance Claim Income	Other Income & Expenses	PL	Division required
+9200	Other Income	Other Income & Expenses	PL	No division
