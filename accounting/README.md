@@ -34,7 +34,7 @@ accounting/
 │   ├── fleet-report-extract.csv  51 vehicles extracted from the RTA fleet report
 │   └── vehicle-master.csv        Fleet register / division list (needs your input)
 ├── import/
-│   ├── chart-of-accounts.tsv     86 accounts, for Manager's Batch Create
+│   ├── chart-of-accounts.tsv     87 accounts, for Manager's Batch Create
 │   └── divisions.tsv             51 vehicle divisions, for Manager's Batch Create
 └── scripts/
     └── parse_fleet_report.py     Re-extracts any future RTA fleet report PDF
