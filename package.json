@@ -1,0 +1,26 @@
+{
+  "name": "pindi-boys-car-rental",
+  "version": "0.1.0",
+  "description": "Domain logic for Pindi Boys Car Rental LLC — fleet, bookings, pricing, and loan finance.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "car-rental",
+    "fleet",
+    "booking",
+    "finance"
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.1.8",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
