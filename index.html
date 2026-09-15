@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pindi Boys Car Rental | Premium Car Hire in Dubai</title>
+    <meta
+      name="description"
+      content="Book a premium rental car with Pindi Boys Car Rental. Flexible plans, luxury fleet, and concierge support across Dubai and the UAE."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="#top" class="brand" aria-label="Pindi Boys Car Rental home">
+          <span class="brand-mark">PB</span>
+          <span class="brand-text">Pindi Boys Car Rental</span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </button>
+          <ul id="primary-navigation" class="nav-list">
+            <li><a href="#fleet">Fleet</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="cta-button" href="#booking">Book Now</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="eyebrow">Luxury Car Hire • Dubai &amp; UAE</span>
+            <h1>Arrive in Style with a Car Rental Experience Tailored to You</h1>
+            <p>
+              Whether you need a daily drive, a weekend escape, or a corporate chauffeur, Pindi Boys
+              curates world-class vehicles, transparent pricing, and concierge-level support inspired by
+              the best global rental brands.
+            </p>
+            <div class="hero-actions">
+              <a class="cta-button" href="#booking">Start Your Reservation</a>
+              <a class="link-button" href="#fleet">Explore the Fleet</a>
+            </div>
+            <dl class="trust-metrics" role="list">
+              <div>
+                <dt>5000+</dt>
+                <dd>Trips completed in 2024</dd>
+              </div>
+              <div>
+                <dt>97%</dt>
+                <dd>Customer satisfaction score</dd>
+              </div>
+              <div>
+                <dt>24/7</dt>
+                <dd>On-call concierge support</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-card">
+              <h2>Reserve in 60 seconds</h2>
+              <form class="booking-form" id="booking" aria-label="Quick booking form">
+                <label>
+                  <span class="label-text">Pick-up location</span>
+                  <input type="text" name="pickup" placeholder="Dubai International Airport" required />
+                </label>
+                <div class="input-group">
+                  <label>
+                    <span class="label-text">Pick-up date</span>
+                    <input type="date" name="pickup-date" required />
+                  </label>
+                  <label>
+                    <span class="label-text">Return date</span>
+                    <input type="date" name="return-date" required />
+                  </label>
+                </div>
+                <label>
+                  <span class="label-text">Vehicle class</span>
+                  <select name="class" required>
+                    <option value="" disabled selected>Select a class</option>
+                    <option value="luxury">Luxury</option>
+                    <option value="suv">SUV</option>
+                    <option value="executive">Executive</option>
+                    <option value="sports">Sports</option>
+                  </select>
+                </label>
+                <button type="submit">Check availability</button>
+                <p class="form-note">No credit card required • Free cancellation up to 24 hours</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="partners" class="partners">
+        <div class="container partners-content">
+          <p class="eyebrow">Trusted by leading hotels &amp; corporate partners</p>
+          <div class="logo-marquee" aria-hidden="true">
+            <span>Burj Hospitality Group</span>
+            <span>Dubai World Trade Centre</span>
+            <span>Expo City Dubai</span>
+            <span>Abu Dhabi Finance</span>
+            <span>Jumeirah Living</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="fleet" class="fleet">
+        <div class="container section-header">
+          <div>
+            <span class="eyebrow">Signature fleet</span>
+            <h2>Curated vehicles for every journey</h2>
+            <p>
+              From luxury sedans to family SUVs and thrill-seeking sports cars, each vehicle is meticulously
+              maintained and delivered spotless to your door.
+            </p>
+          </div>
+          <a class="link-button" href="#contact">Request a bespoke quote</a>
+        </div>
+        <div class="container fleet-grid" role="list">
+          <article class="fleet-card" role="listitem">
+            <div class="fleet-card-body">
+              <h3>Executive Sedan</h3>
+              <p>Mercedes-Benz E-Class or similar</p>
+              <ul>
+                <li>Wi-Fi enabled cabin</li>
+                <li>Complimentary chauffeur on demand</li>
+                <li>Advanced driver assistance features</li>
+              </ul>
+            </div>
+            <div class="fleet-card-footer">
+              <span class="price">AED 449/day</span>
+              <button type="button" class="ghost-button" data-model="Executive Sedan" data-class="executive">Reserve</button>
+            </div>
+          </article>
+          <article class="fleet-card" role="listitem">
+            <div class="fleet-card-body">
+              <h3>Luxury SUV</h3>
+              <p>Range Rover Sport or similar</p>
+              <ul>
+                <li>Panoramic sunroof &amp; premium audio</li>
+                <li>Complimentary airport meet &amp; greet</li>
+                <li>All-inclusive insurance &amp; roadside</li>
+              </ul>
+            </div>
+            <div class="fleet-card-footer">
+              <span class="price">AED 699/day</span>
+              <button type="button" class="ghost-button" data-model="Luxury SUV" data-class="suv">Reserve</button>
+            </div>
+          </article>
+          <article class="fleet-card" role="listitem">
+            <div class="fleet-card-body">
+              <h3>Performance Coupe</h3>
+              <p>BMW M4 Competition or similar</p>
+              <ul>
+                <li>0-100 km/h in 3.9 seconds</li>
+                <li>Track experience add-on available</li>
+                <li>Delivered with performance specialist</li>
+              </ul>
+            </div>
+            <div class="fleet-card-footer">
+              <span class="price">AED 899/day</span>
+              <button type="button" class="ghost-button" data-model="Performance Coupe" data-class="sports">Reserve</button>
+            </div>
+          </article>
+          <article class="fleet-card" role="listitem">
+            <div class="fleet-card-body">
+              <h3>Signature Chauffeur</h3>
+              <p>Rolls-Royce Ghost with professional driver</p>
+              <ul>
+                <li>White-glove chauffeur service</li>
+                <li>In-car refreshments &amp; amenities</li>
+                <li>Perfect for VIP transfers &amp; events</li>
+              </ul>
+            </div>
+            <div class="fleet-card-footer">
+              <span class="price">AED 1,499/day</span>
+              <button type="button" class="ghost-button" data-model="Signature Chauffeur" data-class="luxury">Reserve</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="experience">
+        <div class="container experience-grid">
+          <div class="experience-copy">
+            <span class="eyebrow">Why Pindi Boys</span>
+            <h2>Hospitality-first service that rivals global brands</h2>
+            <p>
+              Inspired by industry leaders like Thrifty, our service model is designed around trust,
+              transparency, and premium convenience.
+            </p>
+            <div class="pill-list">
+              <span class="pill">Airport &amp; hotel delivery</span>
+              <span class="pill">Flexible monthly rentals</span>
+              <span class="pill">Arabic, English &amp; Urdu support</span>
+              <span class="pill">AI-powered fleet monitoring</span>
+            </div>
+          </div>
+          <ul class="experience-list" role="list">
+            <li>
+              <h3>Concierge-level onboarding</h3>
+              <p>
+                Dedicated relationship managers handle your documents, upgrades, and itineraries so you can
+                focus on the journey ahead.
+              </p>
+            </li>
+            <li>
+              <h3>Transparent pricing</h3>
+              <p>
+                No hidden fees or fine print. See the total cost upfront with optional protection plans and
+                add-ons clearly explained.
+              </p>
+            </li>
+            <li>
+              <h3>Smart mobility technology</h3>
+              <p>
+                Live vehicle tracking, predictive maintenance, and digital check-in keep you informed at
+                every stage of your rental.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="offers" class="offers">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow">Seasonal highlights</span>
+              <h2>Current offers &amp; corporate programmes</h2>
+            </div>
+            <a class="link-button" href="#newsletter">Get offer alerts</a>
+          </div>
+          <div class="offers-grid">
+            <article class="offer-card">
+              <h3>Winter escape bundle</h3>
+              <p>
+                20% off on luxury SUVs for desert adventures including sunset picnic setup and dune-ready
+                gear.
+              </p>
+              <span class="tag">Valid until Feb 2026</span>
+            </article>
+            <article class="offer-card">
+              <h3>Corporate mobility suite</h3>
+              <p>
+                Tailored long-term rentals with driver rosters, invoicing support, and monthly utilisation
+                analytics.
+              </p>
+              <span class="tag">Popular with finance &amp; tech firms</span>
+            </article>
+            <article class="offer-card">
+              <h3>Weekend reset</h3>
+              <p>
+                Reserve a sports coupe Friday–Sunday and receive complimentary spa and dining vouchers for
+                two.
+              </p>
+              <span class="tag">Limited availability</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="testimonials">
+        <div class="container testimonials-grid">
+          <div class="testimonial-intro">
+            <span class="eyebrow">Guest stories</span>
+            <h2>Five-star ratings from discerning travellers</h2>
+            <p>
+              We capture post-trip feedback through Trustpilot and Google Reviews to continually elevate
+              every touchpoint.
+            </p>
+          </div>
+          <div class="testimonial-cards" role="list">
+            <figure class="testimonial-card" role="listitem">
+              <blockquote>
+                “The pick-up experience rivalled top-tier international brands. Seamless, punctual, and
+                exactly the vehicle promised.”
+              </blockquote>
+              <figcaption>
+                <span class="name">Aisha K.</span>
+                <span class="role">Dubai-based Entrepreneur</span>
+              </figcaption>
+            </figure>
+            <figure class="testimonial-card" role="listitem">
+              <blockquote>
+                “Our C-suite roadshow relied on Pindi Boys for 14 days. They handled complex itineraries,
+                VIP guests, and last-minute changes flawlessly.”
+              </blockquote>
+              <figcaption>
+                <span class="name">Imran S.</span>
+                <span class="role">Chief of Staff, Global Venture Fund</span>
+              </figcaption>
+            </figure>
+            <figure class="testimonial-card" role="listitem">
+              <blockquote>
+                “We enjoyed the freedom of a weekend Lamborghini with concierge recommendations for the best
+                drives. Premium from start to finish.”
+              </blockquote>
+              <figcaption>
+                <span class="name">Natalia R.</span>
+                <span class="role">Luxury Travel Blogger</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="insights" id="insights">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow">Insights &amp; Guides</span>
+              <h2>Resources to elevate every trip</h2>
+            </div>
+            <a class="link-button" href="#newsletter">Join the insiders list</a>
+          </div>
+          <div class="insights-grid">
+            <article class="insight-card">
+              <span class="tag">Guide</span>
+              <h3>Driving in Dubai: Etiquette &amp; essentials for visitors</h3>
+              <p>Navigate confidently with our curated checklist and local regulations overview.</p>
+              <a href="#" class="text-link">Read the guide</a>
+            </article>
+            <article class="insight-card">
+              <span class="tag">Case study</span>
+              <h3>How a Fortune 500 team scaled their mobility programme</h3>
+              <p>Discover the corporate dashboard we custom-built for global mobility leaders.</p>
+              <a href="#" class="text-link">See how</a>
+            </article>
+            <article class="insight-card">
+              <span class="tag">Report</span>
+              <h3>Luxury travel trends 2026</h3>
+              <p>Download our market outlook featuring exclusive insights from hospitality partners.</p>
+              <a href="#" class="text-link">Download report</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <span class="eyebrow">Get in touch</span>
+            <h2>Dedicated mobility strategists on call 24/7</h2>
+            <p>
+              Call us on <a href="tel:+971509876543">+971 50 987 6543</a> or drop a message anytime. Our
+              team will craft a bespoke rental plan within 30 minutes.
+            </p>
+            <ul class="contact-list" role="list">
+              <li>
+                <span class="label">Headquarters</span>
+                <span>Al Quoz, Dubai, United Arab Emirates</span>
+              </li>
+              <li>
+                <span class="label">Email</span>
+                <a href="mailto:concierge@pbrentacar.ae">concierge@pbrentacar.ae</a>
+              </li>
+              <li>
+                <span class="label">WhatsApp</span>
+                <a href="https://wa.me/971509876543" target="_blank" rel="noopener">Chat instantly</a>
+              </li>
+            </ul>
+          </div>
+          <form class="contact-form" aria-label="Contact form">
+            <label>
+              <span class="label-text">Full name</span>
+              <input type="text" name="name" placeholder="Your full name" required />
+            </label>
+            <label>
+              <span class="label-text">Email address</span>
+              <input type="email" name="email" placeholder="name@email.com" required />
+            </label>
+            <label>
+              <span class="label-text">Phone number</span>
+              <input type="tel" name="phone" placeholder="+971 50 000 0000" required />
+            </label>
+            <label>
+              <span class="label-text">Message</span>
+              <textarea name="message" rows="4" placeholder="Tell us about your upcoming trip" required></textarea>
+            </label>
+            <button type="submit">Send enquiry</button>
+            <p class="form-note">Our specialists typically reply in under 15 minutes.</p>
+          </form>
+        </div>
+      </section>
+
+      <section id="newsletter" class="newsletter">
+        <div class="container newsletter-card">
+          <div>
+            <span class="eyebrow">Stay ahead</span>
+            <h2>Subscribe for curated travel inspiration and member offers</h2>
+          </div>
+          <form class="newsletter-form" aria-label="Newsletter signup">
+            <label class="sr-only" for="newsletter-email">Email</label>
+            <input id="newsletter-email" type="email" placeholder="Enter your email" required />
+            <button type="submit">Join the list</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#top" class="brand brand-footer">
+            <span class="brand-mark">PB</span>
+            <span class="brand-text">Pindi Boys Car Rental</span>
+          </a>
+          <p>
+            Premium vehicle rentals and chauffeur services crafted for travellers, corporate teams, and VIP
+            experiences across the UAE.
+          </p>
+          <div class="social-links" aria-label="Social media">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer-columns">
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#experience">About us</a></li>
+              <li><a href="#offers">Membership</a></li>
+              <li><a href="#insights">Media centre</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Rental policies</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Terms &amp; conditions</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Insurance coverage</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <p>&copy; <span id="year"></span> Pindi Boys Car Rental LLC. All rights reserved.</p>
+          <a href="mailto:concierge@pbrentacar.ae">concierge@pbrentacar.ae</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
