@@ -150,6 +150,30 @@ which is well within Manager's capacity. Second, **withdrawals exceeded deposits
 the account closed at AED 705.** With AED 65,840/month of loan instalments (below),
 cash timing is tight; the cash-flow report in Phase 10 is not a nice-to-have.
 
+**Bank reference letter — Emirates NBD, dated 21 Aug 2026** (received by email
+25 Aug 2026):
+
+| Field | Value |
+|---|---|
+| Account name | PINDI BOYS CAR RENTAL LLC |
+| Account number | 6605790976501 (AED) |
+| IBAN | AE970260006605790976501 |
+| SWIFT | EBILAEAD |
+| Type | Current account, opened 13/11/2021 |
+| Branch | Group Head Office |
+| Dealings | Borrowing ✔ |
+
+This is the **second** bank account, and it had been missing from the chart: the
+Sep 2025 statement above is Emirates Islamic, and NBD appeared in this design only
+as a lender (account 2400, 18 financed vehicles). It is now account **1020**. The
+"Borrowing" tick is the bank's own confirmation of that lending relationship, which
+corroborates the 41-of-51 mortgaged count in §2.
+
+Two things this does **not** tell us, and neither should be assumed: the account's
+**balance**, and whether the AED 65,840/month of instalments leaves from this account
+or from Emirates Islamic. A reference letter states existence, not position. The
+opening balance for 1020 has to come from an NBD statement — added as O10.
+
 **Loan sheet 2025** — the PDF is **clipped**: it was exported too wide, so the
 vehicle-name and 2025 columns are cut off the page. What survives:
 

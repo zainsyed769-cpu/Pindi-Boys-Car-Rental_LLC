@@ -19,7 +19,7 @@ The right answer in Manager is to separate the two dimensions:
 
 | Dimension | Manager feature | Answers |
 |---|---|---|
-| **What kind of cost is it?** | Chart of accounts (86 accounts) | "How much did we spend on tyres?" |
+| **What kind of cost is it?** | Chart of accounts (87 accounts) | "How much did we spend on tyres?" |
 | **Which car was it for?** | **Divisions** — one per vehicle, V-001…V-051 | "What did V-013 cost us?" |
 | **What is the car worth?** | **Fixed Assets** — one per vehicle, same code | "What is V-013's book value?" |
 
@@ -64,7 +64,8 @@ Import-ready in `import/chart-of-accounts.tsv`. Codes are grouped so reports sor
 |---|---|---|
 | 1000 | Petty Cash | Cash & Cash Accounts, not a manual GL account |
 | 1010 | Emirates Islamic Bank – Current A/C ···939001 | IBAN AE700400000332982939001 |
-| 1020 | *(further bank accounts as needed)* | |
+| 1020 | Emirates NBD – Current A/C ···976501 | IBAN AE970260006605790976501 · SWIFT EBILAEAD |
+| 1030 | *(further bank accounts as needed)* | |
 | 1100 | Accounts Receivable | auto — customers |
 | 1110 | Billable Expenses | auto — Salik & fines awaiting recharge |
 | 1150 | Other Receivables | staff advances, insurance claims receivable |

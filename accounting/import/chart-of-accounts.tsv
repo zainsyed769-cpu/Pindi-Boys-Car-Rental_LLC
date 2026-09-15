@@ -1,6 +1,7 @@
 Code	Name	Group	Statement	Notes
 1000	Petty Cash	Cash & Cash Equivalents	BS	Create via Bank & Cash Accounts, not manually
 1010	Emirates Islamic Bank - Current A/C 939001	Cash & Cash Equivalents	BS	IBAN AE700400000332982939001
+1020	Emirates NBD - Current A/C 6605790976501	Cash & Cash Equivalents	BS	IBAN AE970260006605790976501, SWIFT EBILAEAD, opened 13/11/2021
 1100	Accounts Receivable	Current Assets	BS	Auto-created by Manager
 1110	Billable Expenses	Current Assets	BS	Auto-created by Manager
 1150	Other Receivables	Current Assets	BS	
