@@ -195,3 +195,86 @@ CREATE TABLE IF NOT EXISTS loan_instalment (
   paid_on       TEXT,
   UNIQUE (loan_id, seq)
 );
+
+-- ===========================================================================
+-- GENERAL LEDGER
+--
+-- Added when the decision was taken that this system replaces Manager rather
+-- than feeding it (decisions.md D9). From that moment these tables are the
+-- book of record: the statutory accounts and the FTA return are produced from
+-- here, so the rules below are enforced by the database, not by convention.
+-- ===========================================================================
+
+-- The chart of accounts. Seeded from accounting/import/chart-of-accounts.tsv
+-- so the design document and the running system cannot drift apart.
+CREATE TABLE IF NOT EXISTS account (
+  code          TEXT PRIMARY KEY,              -- '1000' .. '9200'
+  name          TEXT NOT NULL,
+  acct_group    TEXT NOT NULL,                 -- 'Cash & Cash Equivalents', ...
+  statement     TEXT NOT NULL CHECK (statement IN ('BS','PL')),
+  type          TEXT NOT NULL
+                CHECK (type IN ('asset','liability','equity','income','expense')),
+  -- Which side increases the account. Contra accounts (accumulated
+  -- depreciation, owner's drawings) sit under their parent type but carry the
+  -- opposite normal balance, so this cannot be derived from type alone.
+  normal        TEXT NOT NULL CHECK (normal IN ('debit','credit')),
+  contra        INTEGER NOT NULL DEFAULT 0,
+  notes         TEXT
+);
+
+-- VAT treatment of a line. The FTA return is built from these, not from the
+-- balance of 2200, because box 1 (output) and box 9 (input) have to be
+-- reported separately while the GL keeps one net VAT control account.
+CREATE TABLE IF NOT EXISTS tax_code (
+  code          TEXT PRIMARY KEY,
+  name          TEXT NOT NULL,
+  rate          REAL NOT NULL,
+  direction     TEXT NOT NULL CHECK (direction IN ('output','input','none'))
+);
+
+CREATE TABLE IF NOT EXISTS journal (
+  id            INTEGER PRIMARY KEY,
+  entry_date    TEXT NOT NULL,
+  memo          TEXT,
+  -- Which operational event raised this entry. 'manual' and 'opening' have no
+  -- source row; everything else points back at the thing that caused it, so a
+  -- ledger line can always be traced to the rental or invoice behind it.
+  source        TEXT NOT NULL CHECK (source IN
+                ('charge','payment','expense','depreciation','loan','disposal',
+                 'investor','opening','manual','reversal')),
+  source_id     INTEGER,
+  reverses_id   INTEGER REFERENCES journal(id),
+  voided        INTEGER NOT NULL DEFAULT 0,
+  created_at    TEXT NOT NULL DEFAULT (datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS idx_journal_date ON journal(entry_date);
+-- At most one live entry per operational event: posting the same charge twice
+-- is a database error rather than a silently doubled balance.
+CREATE UNIQUE INDEX IF NOT EXISTS idx_journal_source
+  ON journal(source, source_id) WHERE source_id IS NOT NULL AND voided = 0;
+
+CREATE TABLE IF NOT EXISTS journal_line (
+  id            INTEGER PRIMARY KEY,
+  journal_id    INTEGER NOT NULL REFERENCES journal(id) ON DELETE CASCADE,
+  account_code  TEXT NOT NULL REFERENCES account(code),
+  vehicle_id    INTEGER REFERENCES vehicle(id),   -- the division: per-car P&L
+  customer_id   INTEGER REFERENCES customer(id),
+  debit         INTEGER NOT NULL DEFAULT 0,       -- fils
+  credit        INTEGER NOT NULL DEFAULT 0,       -- fils
+  tax_code      TEXT REFERENCES tax_code(code),
+  tax_amount    INTEGER NOT NULL DEFAULT 0,       -- VAT on this line, fils
+  memo          TEXT,
+  CHECK (debit >= 0 AND credit >= 0),
+  -- A line is a debit or a credit, never both and never neither.
+  CHECK ((debit = 0) <> (credit = 0))
+);
+CREATE INDEX IF NOT EXISTS idx_line_journal ON journal_line(journal_id);
+CREATE INDEX IF NOT EXISTS idx_line_account ON journal_line(account_code);
+CREATE INDEX IF NOT EXISTS idx_line_vehicle ON journal_line(vehicle_id);
+
+-- Once a VAT quarter is filed its figures must not move underneath the filing.
+CREATE TABLE IF NOT EXISTS period_lock (
+  locked_upto   TEXT PRIMARY KEY,               -- nothing may post on or before
+  locked_at     TEXT NOT NULL DEFAULT (datetime('now')),
+  reason        TEXT
+);

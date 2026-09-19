@@ -19,16 +19,33 @@ export const all = (sql, ...p) => open().prepare(sql).all(...p);
 export const get = (sql, ...p) => open().prepare(sql).get(...p);
 export const run = (sql, ...p) => open().prepare(sql).run(...p);
 
-/** Run fn inside a transaction, rolling back on any throw. */
+let depth = 0;
+
+/**
+ * Run fn inside a transaction, rolling back on any throw.
+ *
+ * Re-entrant. SQLite has no nested BEGIN, but the ledger composes: reversing an
+ * entry has to void the original and post its mirror as one unit, and posting
+ * is itself transactional. A nested call therefore takes a SAVEPOINT, so an
+ * inner failure unwinds only its own work and an outer failure still takes the
+ * whole thing with it.
+ */
 export function tx(fn) {
   const d = open();
-  d.exec('BEGIN');
+  const nested = depth > 0;
+  const name = `sp_${depth}`;
+  d.exec(nested ? `SAVEPOINT ${name}` : 'BEGIN');
+  depth += 1;
   try {
     const out = fn();
-    d.exec('COMMIT');
+    d.exec(nested ? `RELEASE ${name}` : 'COMMIT');
     return out;
   } catch (err) {
-    d.exec('ROLLBACK');
+    // ROLLBACK TO leaves the savepoint in place, so it is released straight
+    // after; otherwise it would sit on the stack and break the next unwind.
+    d.exec(nested ? `ROLLBACK TO ${name}; RELEASE ${name}` : 'ROLLBACK');
     throw err;
+  } finally {
+    depth -= 1;
   }
 }
